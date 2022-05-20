@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>StarCaters</title>
+</head>
+<body>
+    <header>
+        <div class="navbar-container">
+            <label for="logo">StarCaters</label>
+            <div class="navbar">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#registration">Registration</a></li>
+                    <li><a href="#feedback">Feedback</a></li>
+                </ul>
+                <input type="text" id="search" placeholder="search category">
+                <button  id="btn">Serach</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ABOUT SECTION HTML -->
+    <section id="about">
+     <h1>StarCaters|Online Food Website</h1>
+     <p>This website provide all types of food with customer satisfaction.</p>
+    </section>
+  
+    <!-- Gallery SECTION HTML -->
+
+    <SECTION id="gallery">
+        <div id="container">
+            <h1> Gallery</h1>
+            <table>
+                <tr class="row">
+                    <td><img src="images/clientsbg.jpg" alt="Food image"></td>
+                    <td><img src="images/item1.jpg" alt="Food image"></td>
+                </tr>
+                <tr class="row">
+                    <td><img src="images/vegetable-skewer-3317060_640.jpg" alt="Food image"></td>
+                    <td><img src="images/aboutusbg.jpg" alt="Food image"></td>
+                </tr>
+                <tr class="row">
+                    <td><img src="images/clientsbg.jpg" alt="Food image"></td>
+                    <td><img src="images/item2.jpg" alt="Food image"></td>
+                </tr>
+            </table>
+        </div>
+
+    </SECTION>
+
+    <SECTION id="registration">
+        <div id="container">
+            <h1> Registration</h1>
+            <form action="submit">
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" placeholder="Enter your name"><br>
+                <label for="email">Email:</label>
+                <input type="email" name="Email" id="email" placeholder="Enter your email"><br>
+                <label for="phone">Phone:</label>
+                <input type="phone" name="phone" id="phone" placeholder="Enter your phone"><br>
+                <label for="phone">Password:</label>
+                <input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" name="password" id="password" placeholder="Enter your password"><br>
+                <button id="btn">Register</button>
+            </form>
+        </div>
+    </SECTION>
+    <SECTION id="feedback">
+
+        <div id="container">
+            <h1>Feedback</h1>
+                  <form >
+                      <label for="name">Name</label><br>
+                      <input type="text" name="fullname"> <br>
+                      <label for="username"> Username</label><br>
+                      <input type="email" placeholder="Enter Email" name="email" required><br>
+                      <label for="complaint">Feedback</label><br>
+                     <textarea id="feedback-details"  cols="20" rows="7" placeholder="Add...." name="detail-description"></textarea>  </br>
+                  </form>
+                  <button id="feedbackbtn" type="submit" value="register">Submit</button>
+        </div>
+
+    </SECTION>
+
+   <footer>
+
+   </footer>
+<script src="script.js"></script>
+</body>
+</html>
